@@ -27,6 +27,7 @@ const sendEmailController = (req, res) => {
     }
     //email matter
     try{
+      console.log("called");
       transporter.sendMail(
         {
           to: process.env.RECEIVER,

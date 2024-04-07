@@ -39,7 +39,6 @@ const Contact = () => {
       console.log(error);
     }
   };
-
   return (
     <>
       <div className=" contact" id="contact">
