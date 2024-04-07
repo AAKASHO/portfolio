@@ -72,7 +72,7 @@ await new Promise((resolve, reject) => {
 
 return res.status(200).send({
         success: true,
-        message: process.env.PASSWORD,
+        message: "Message successfully sent!",
       });
 };
 
