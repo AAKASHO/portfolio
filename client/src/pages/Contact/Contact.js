@@ -4,7 +4,7 @@ import axios from "axios";
 import "./Contact.css";
 import Rotate from "react-reveal/Rotate";
 import LightSpeed from "react-reveal/LightSpeed";
-import { BsFacebook, BsGithub, BsLinkedin, BsTwitter } from "react-icons/bs";
+import {BsGithub, BsLinkedin, BsTwitter } from "react-icons/bs";
 const Contact = () => {
   const [name, setname] = useState("");
   const [email, setEmail] = useState("");
@@ -114,6 +114,7 @@ const Contact = () => {
                         onChange={(e) => setMsg(e.target.value)}
                       />
                     </div>
+
                     <div className="row px-3">
                       <button className="button" onClick={handleSubmit}>
                         SEND MESSAGE
