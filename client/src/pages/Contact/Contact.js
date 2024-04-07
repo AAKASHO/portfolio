@@ -9,6 +9,7 @@ const Contact = () => {
   const [name, setname] = useState("");
   const [email, setEmail] = useState("");
   const [msg, setMsg] = useState("");
+  const [loading, setLoading] = useState(false);
 
   //handle submit button
   useEffect(()=>{
@@ -16,6 +17,7 @@ const Contact = () => {
   },[])
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
     try {
       if (!name || !email || !msg) {
         toast.error("PLease Provide all fields");
@@ -28,6 +30,7 @@ const Contact = () => {
       });
       //validation success
       if (res.data.success) {
+        console.log(res.data.message)
         toast.success(res.data.message);
         setname("");
         setEmail("");
@@ -38,6 +41,7 @@ const Contact = () => {
     } catch (error) {
       console.log(error);
     }
+    setLoading(false);
   };
   return (
     <>
@@ -119,9 +123,12 @@ const Contact = () => {
                         SEND MESSAGE
                       </button>
                     </div>
+                    {loading&&<h6>Sending...</h6>}
                   </div>
                 </div>
               </Rotate>
+        <div>
+        </div>
             </div>
           </div>
         </div>
