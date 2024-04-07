@@ -35,12 +35,12 @@ await new Promise((resolve, reject) => {
 
 const mailData = {
     from: {
-        name: `Job Offer`,
+        name: `${name}`,
         address: `${email}`,
     },
     replyTo: email,
     to: process.env.RECEIVER,
-    subject: `form message`,
+    subject: `Job Offer`,
     text: msg,
     html: `<div class="container" style="max-width: 600px; margin: 20px auto; background-color: #ECECEC; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
             <div class="header" style="text-align: center; padding-bottom: 20px;">
