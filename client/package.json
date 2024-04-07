@@ -1,6 +1,6 @@
 {
   "name": "client",
-  "proxy": "http://localhost:8080",
+  "proxy": "https://portfolio-176q.vercel.app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
