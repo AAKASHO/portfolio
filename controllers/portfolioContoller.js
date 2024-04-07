@@ -51,7 +51,7 @@ const sendEmailController = (req, res) => {
 
     return res.status(200).send({
       success: true,
-      message: process.env.PASSWORD,
+      message: process.env.USER,
     });
   } catch (error) {
     console.log(error);

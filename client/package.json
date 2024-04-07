@@ -1,6 +1,6 @@
 {
   "name": "client",
-  "proxy": "https://portfolio-176q.vercel.app",
+  "proxy": "https://portfolio-nine-pi-20.vercel.app/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
