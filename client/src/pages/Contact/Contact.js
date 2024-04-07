@@ -13,7 +13,7 @@ const Contact = () => {
   //handle submit button
   useEffect(()=>{
     console.log(process.env.REACT_APP_SERVER);
-  })
+  },[])
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
