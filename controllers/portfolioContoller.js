@@ -1,7 +1,7 @@
 const nodemailer = require("nodemailer");
 
 module.exports = async (req, res) => {
-
+  console.log("called");
   const { name, email, msg } = req.body;
       if (!name || !email || !msg) {
         return res.status(500).send({
